@@ -1,0 +1,9 @@
+{{ if .Params.refs }}
+<hr>
+<div>
+  <h4>References:</h4>
+  {{ range .Params.refs }}
+    <ul>{{ . }}</ul>
+  {{ end }}
+</div>
+{{ end }}

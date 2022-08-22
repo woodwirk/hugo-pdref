@@ -2,6 +2,12 @@
 
 <main class="content" role="main">
 
+    {{ if .Content }}
+        {{ .Content }}
+    {{ end }}
+    <hr>
+    <br>
+
     <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
         {{ $all_images := slice }}
         {{ range .Site.Pages }}

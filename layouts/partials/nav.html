@@ -11,8 +11,11 @@
 
     <li{{ with .Identifier }} id="{{ . }}"{{ end }}>
       <a href="{{ .URL }}">
-        <img src="{{ with .Title }}{{ . | relURL }}{{ end }}" width="50px" height="50px">
-        <!-- {{ .Name }} -->
+        {{ with .Title }}
+          <img src="{{ . | relURL }}" width="50px" height="50px">
+        {{ else }}
+          {{ .Name }}
+        {{ end }}
       </a>
     </li>
     {{ end }}

@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
-theme = "hugo-lithium-refs"
+title = "References"
+theme = "hugo-pdref"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
@@ -15,13 +15,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
     title = "icons/grid_view_FILL0_wght400_GRAD0_opsz48.svg"
     # the above is NOT best practice. As of hugo 0.79, there is the option to specify menu parameters for custom values
 [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    title = "icons/tag_FILL0_wght400_GRAD0_opsz48.svg"
+[[menu.main]]
     name = "Search"
     url = "/#/"
     identifier = "menu-search"
     title = "icons/search_FILL0_wght400_GRAD0_opsz48.svg"
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "A website built through Hugo"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
